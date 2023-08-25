@@ -1,5 +1,6 @@
-const request = require("supertest"); // For testing HTTP requests
-const app = require("./index"); // Assuming your Express app is exported from index.js
+import { expect, describe, it } from "vitest";
+import request from "supertest"; // For testing HTTP requests
+import app from "./index"; // Assuming your Express app is exported from index.js
 
 // Mock the session middleware for testing
 app.use((req, res, next) => {
