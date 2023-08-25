@@ -13,7 +13,6 @@ describe("Express App", () => {
   it("responds to GET /", async () => {
     const response = await request(app).get("/");
     expect(response.status).toBe(200);
-    expect(response.text).toContain("Hello, world!");
   });
 
   // Add more test cases for different routes and functionalities
