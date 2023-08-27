@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "vitest --run --reporter verbose",
-    "test:watch": "vitest",
+    "test": "vitest --run --reporter verbose --globals",
+    "test:watch": "vitest --reporter verbose",
     "start": "http-server -c-1"
   },
   "keywords": [],
